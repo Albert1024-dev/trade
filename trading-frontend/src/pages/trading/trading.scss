@@ -1,0 +1,96 @@
+.trading-header {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  color: white;
+  .trading-header-icon {
+    img {
+    }
+    h2 {
+    }
+  }
+  .trading-header-number {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+    .trading-header-number-each-title {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      .trading-header-number-each-title-name {
+        p {
+          font-size: 12px;
+          color: grey;
+        }
+      }
+      .trading-header-number-each-title-price {
+        p {
+          font-size: 14px;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .trading-header-status {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    .trading-header-feedback {
+      .trading-header-feedback-button {
+        padding: 5px 10px;
+        background-color: #171b25;
+        color: white;
+        border-radius: 5px;
+        font-size: 12px;
+      }
+    }
+    .trading-header-total-status {
+      .trading-header-status-number {
+        font-size: 12px;
+        color: white;
+      }
+      .trading-header-status-icon {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+        .trading-header-status-icon-color {
+          border-radius: 50%;
+          padding: 5px;
+          background-color: #009982;
+        }
+        p {
+          font-size: 11px;
+          color: grey;
+        }
+      }
+    }
+    .trading-header-total-dollar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .trading-header-total-dollar-button {
+        padding: 5px;
+        background-color: #171b25;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+      }
+      p {
+        position: absolute;
+        top: 0;
+        transform: translateY(110%);
+      }
+    }
+  }
+}

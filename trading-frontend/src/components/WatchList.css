@@ -1,0 +1,115 @@
+.form-layout {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between elements */
+  padding: 10px;
+}
+.table-row {
+  background-color: black;
+  color: #c5c8c2;
+  margin-bottom: 2px;
+  cursor: pointer;
+}
+
+.table-row:hover {
+  background-color: #171b25;
+}
+.search-wrapper,
+.select-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 10px;
+  width: 100%;
+}
+
+.form-icon {
+  position: absolute;
+  left: 10px;
+  pointer-events: none;
+  color: #ccc;
+}
+
+.form-icon1 {
+  position: absolute;
+  right: 10px;
+  pointer-events: none;
+  color: #ccc;
+}
+
+.input-field {
+  padding: 3px 0px 3px 30px; /* Adjust padding for icon */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  width: "100%";
+}
+
+.select-field {
+  padding: 3px 0px 3px 10px; /* Adjust padding for icon */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  appearance: none;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  width: "100%";
+}
+
+.gear-button {
+  background-color: #171b25;
+  color: white;
+  border: none;
+  padding: 3px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.button {
+  background-color: lightgray;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  height: 30px;
+  position: relative;
+  width: 60px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.button:hover {
+  background-color: lightgray;
+}
+
+.button:focus,
+.button:active {
+  outline: none;
+}
+
+.button::-moz-focus-inner {
+  border: 0;
+}
+
+.pin {
+  background-color: white;
+  border-radius: 28px;
+  height: 24px;
+  left: 4px;
+  position: absolute;
+  top: 3px;
+  width: 28px;
+  transition: left ease 0.5s;
+}
+
+.button.on {
+  background-color: #009982;
+}
+
+.button.on .pin {
+  left: 28px;
+}
+
+.button.off {
+  background-color: #fb3746; /* optional, to explicitly define the color when off */
+}

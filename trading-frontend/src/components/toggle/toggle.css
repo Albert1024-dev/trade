@@ -1,0 +1,42 @@
+.toggle-button {
+  position: relative;
+
+  border-radius: 4px;
+  padding: 4px;
+  display: inline-grid;
+  color: white;
+  width: 100%;
+}
+
+.button-group {
+  display: inline-grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  grid-gap: 4px;
+  width: 40%;
+}
+
+.toggle-button-item {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.toggle-button-item:hover {
+  background-color: #171b25;
+  border-radius: 4px;
+}
+
+.toggle-button-item.active:hover {
+  background-color: unset;
+}
+
+.slide-animation {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  z-index: -1;
+  height: 100%;
+  background-color: #171b25;
+  transition: transform 0.3s ease;
+  border-radius: 4px;
+}
